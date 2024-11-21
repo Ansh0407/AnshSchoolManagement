@@ -7,13 +7,22 @@
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   },
-  "keywords": ["school", "management", "api", "nodejs", "express", "mysql"],
+  "keywords": [
+    "school",
+    "management",
+    "api",
+    "nodejs",
+    "express",
+    "mysql"
+  ],
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.3",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.2",
     "mysql2": "^3.11.4"
   },
   "devDependencies": {

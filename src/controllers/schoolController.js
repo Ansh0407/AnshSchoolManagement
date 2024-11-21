@@ -1,6 +1,5 @@
 const db = require('../db/connection');
 
-// Helper function to calculate Haversine distance
 const haversine = (lat1, lon1, lat2, lon2) => {
     const toRadians = (deg) => deg * (Math.PI / 180);
     const R = 6371; // Radius of Earth in kilometers
@@ -11,7 +10,6 @@ const haversine = (lat1, lon1, lat2, lon2) => {
     return R * c; // Distance in kilometers
 };
 
-// Add School API
 exports.addSchool = (req, res) => {
     const { name, address, latitude, longitude } = req.body;
 
@@ -29,7 +27,6 @@ exports.addSchool = (req, res) => {
     });
 };
 
-// List Schools API
 exports.listSchools = (req, res) => {
     const { latitude, longitude } = req.query;
 
